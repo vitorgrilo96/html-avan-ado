@@ -1,0 +1,73 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: red;
+}
+
+nav{
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    padding: 10px;
+}
+
+nav a:hover{
+    background-color: yellow;
+}
+
+h1{
+    color: white;
+    text-align: center;
+}
+
+h2{
+    color: white;
+}
+
+footer{
+    padding: 20px;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+}
+
+main article{
+    display: flex;
+    flex-direction: column;
+}
+
+div.pokedex{
+    display: flex;
+    overflow: hidden;
+    margin: 0px 100px 20px 100px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+div.pokedex article{
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+div.pokedex article h2{
+    margin: 0px;
+    text-align: center;
+}
+
+div.pokedex article img{
+    width: 250px;
+}
+
+figcaption{
+    max-width: 250px;
+    color: white;
+}

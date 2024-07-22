@@ -1,0 +1,84 @@
+body{
+    margin: 0px;
+    display: flex;
+    background-color: black;
+}
+
+h1{
+    background-color: yellow;
+    text-align: center;
+}
+
+main{
+    width: calc(100vw - 500px);
+}
+
+aside.sidebar-esquerda,
+aside.sidebar-direita{
+    width: 250px;
+    height: 100vh;
+    background-color: crimson;
+    color: antiquewhite;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+aside.sidebar-esquerda ul,
+aside.sidebar-direita ul{
+    list-style-type: none;
+    padding: 0px;
+}
+
+aside.sidebar-direita ul{
+    margin: 0px;
+}
+
+aside.sidebar-esquerda ul li,
+aside.sidebar-direita ul li{
+    padding: 10px;
+    cursor: pointer;
+}
+
+aside.sidebar-esquerda ul li:hover
+aside.sidebar-direita ul li:hover{
+    background-color: darkslategray;
+}
+
+aside.sidebar-direita ul ul{
+    list-style-type: none;
+    padding-left: 10px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 3s;
+}
+
+aside.sidebar-direita ul li:hover > ul{
+    max-height: 500px;
+}
+
+aside.sidebar-direita ul ul li{
+    padding: 10px;
+}
+
+aside.sidebar-direita ul ul li:hover{
+    background-color: darkslategray;
+}
+
+.hidden-items{
+    display: none;
+}
+
+.toggle-button{
+    background-color: cadetblue;
+    border: none;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+}
+
+.toggle-button:hover{
+    background-color: lightskyblue;
+}
+

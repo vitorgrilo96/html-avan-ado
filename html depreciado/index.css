@@ -1,0 +1,77 @@
+.centralizado{
+    text-align: center;
+}
+
+.titulo-realce{
+    color:blue;
+    font-family: arial;
+    font-size: 22px;
+}
+
+.marquee-container{
+    overflow: hidden;
+    width: 300px;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+.marquee{
+    animation: scrolling-text 10s linear infinite;
+    display: inline-block;
+    width: inherit;
+}
+
+
+@keyframes scrolling-text{
+    0% {
+        text-indent: 100%;
+    }
+    100%{
+        text-indent: -100%;
+    }
+}
+
+.negrito{
+    font-weight: bold;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+table, tr, td, th{
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+}
+
+table thead tr{
+    background-color: blue;
+}
+
+.coluna-codigo{
+    width: 100px;
+}
+
+.coluna-nome{
+    width: 200px;
+}
+
+th:nth-child(2):hover{
+    background-color: yellow;
+}
+
+th:nth-child(1):hover{
+    background-color: yellow;
+}
+
+tbody tr:nth-child(even):hover{
+    background-color: green;
+}
+/*trocar o background color das linahs impares*/
+tbody tr:nth-child(odd):hover{
+    background-color: green;
+}
+
+img{
+    height: 200px;
+}
